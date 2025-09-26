@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Dashboard;
 
-use App\Livewire\Complaint\Report;
+use App\Livewire\Complaints\Report;
 use App\Models\Appointment;
 use App\Models\Complaint;
 use App\Models\Mechanic;

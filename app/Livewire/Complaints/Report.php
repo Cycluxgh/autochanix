@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Complaint;
+namespace App\Livewire\Complaints;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class Report extends Component
 {
     public function render()
     {
-        return view('livewire.complaint.report');
+        return view('livewire.complaints.report');
     }
 }

@@ -67,13 +67,13 @@
                     <div class="collapse" id="sidebarAuth">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="{{ route('vehicles.create') }}" class="tp-link" >Add</a>
+                                <a href="{{ route('complaints.create', ['complaintId' => '']) }}" class="tp-link" >Add</a>
                             </li>
                             <li>
-                                <a href="{{ route('vehicles.index') }}" class="tp-link">List</a>
+                                <a href="{{ route('complaints.index') }}" class="tp-link">List</a>
                             </li>
                             <li>
-                                <a href="{{ route('vehicles.report') }}" class="tp-link">Reports</a>
+                                <a href="{{ route('complaints.report') }}" class="tp-link">Reports</a>
                             </li>
 {{--                            <li>--}}
 {{--                                <a href="auth-lock-screen.html" class="tp-link">Lock Screen</a>--}}

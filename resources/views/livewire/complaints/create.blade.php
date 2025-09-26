@@ -1,5 +1,9 @@
-<x-slot:title>Add Complaint</x-slot>
-<x-slot:page_title>Add Vehicle Complaint</x-slot>
+@if($complaintId)
+    <x-slot:title>Edit Complaint</x-slot>
+@else
+    <x-slot:title>Add Complaint</x-slot>
+@endif
+<x-slot:page_title>@if($complaintId) Edit @else Add @endif Vehicle Complaint</x-slot>
 <div>
     <div class="row">
         <div class="col-xl-12">
@@ -17,7 +21,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <form class="novalidated" wire:submit="save">
+                    <form class="novalidated" wire:submit="@if($complaintId)update @else save @endif">
                         <div class="row">
                             <div class="col-6">
                                 <div class="mb-3">
@@ -121,7 +125,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-primary float-end" type="submit">Submit Complain <span class="spinner-grow spinner-grow-sm" aria-hidden="true" wire:loading></span></button>
+                        <button class="btn btn-primary float-end" type="submit">@if($complaintId)Save @else Submit Complaint @endif <span class="spinner-grow spinner-grow-sm" aria-hidden="true" wire:loading></span></button>
                     </form>
                 </div> <!-- end card-body -->
             </div> <!-- end card-->
