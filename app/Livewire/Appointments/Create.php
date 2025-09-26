@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Appointment;
+namespace App\Livewire\Appointments;
 
 use App\Models\Appointment;
 use App\Models\Complaint;

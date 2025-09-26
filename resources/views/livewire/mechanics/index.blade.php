@@ -1,5 +1,5 @@
-<x-slot:title>Mechanic List</x-slot>
-<x-slot:page_title>Mechanic List</x-slot>
+<x-slot:title>Mechanics</x-slot>
+<x-slot:page_title>Mechanics List</x-slot>
 
 <!-- Button Datatable -->
 <div class="row">
